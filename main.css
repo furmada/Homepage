@@ -1,0 +1,226 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+body{
+	background-color: #999;
+	font-family: Helvetica;
+	width: 100vw;
+	min-height: 100vh;
+	height: auto;
+	overflow-x: hidden;
+}
+
+a{
+	color: #06F;
+	text-decoration: none;
+}
+
+    a:hover {
+        color: #7e97e3;
+    }
+
+.header{
+	background-color: #CCC;
+	padding: 10px;
+	width: 100%;
+	height: 20vh;
+	z-index: 2;
+	min-height: 10vh;
+    position: absolute;
+    top: 0px;
+}
+	
+	.header .menubar{
+		background-color: #333;
+		width: 100vw;
+		height: 40px;
+		font-size: 18px;
+		text-align: center;
+		z-index: 2;
+        margin-left: -2%;
+        margin-bottom: 10px;
+	}
+	
+		.header .menubar .menubarItem{
+			z-index: 3;
+			display: inline-block;
+			margin-top: 7px;
+            text-align: center;
+		}
+		
+			.header .menubar .menubarItem p{
+				color: #FFF;
+				font-size: 18px;
+			}
+			
+			.header .menubar .menubarItem p:hover{
+				color: #999;
+				font-size: 18px;
+			}
+			
+			.header .menubar .menubarItem div{
+				background-color: #999;
+				z-index: 4;
+				position: absolute;
+                border: 2px solid #000;
+                display: none;
+                line-height: 30px;
+			}
+
+                .header .menubar .menubarItem div * {
+                    margin: 10px!important;
+                }
+
+                .header .menubar .menubarItem div *:hover {
+                    color: #333;
+                }
+
+.content {
+    background-color: #FFF;
+    z-index: 1;
+    margin-top: 25vh;
+    margin-left: 8vw;
+    margin-right: 10vw;
+    padding: 20px;
+    width: 80vw;
+    min-height: 80vh;
+    height: auto;
+}
+
+div .horizline {
+    height: 2px;
+    background-color: #000;
+    width: inherit;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.itemWithImage {
+    background-color: #f6f6f6;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #000;
+    height: auto;
+    float: left;
+}
+    .itemWithImage img {
+        width: 20vw;
+        margin-left: 20px;
+        margin-right: 40px;
+        float: left;
+    }
+
+    .itemWithImage h2 {
+        margin-bottom: 10px;
+    }
+
+.itemWithText {
+    background-color: #f6f6f6;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #000;
+}
+    .itemWithText p {
+        text-indent: 10px;
+    }
+
+    .itemWithText ul {
+        margin-left: 40px;
+    }
+
+    .itemWithText ol {
+        margin-left: 40px;
+    }
+
+.itemWithImages {
+    background-color: #f6f6f6;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #000;
+}
+    .imageAndCaption {
+        border: 2px solid #000;
+        text-align: center;
+        display: table-cell;
+    }
+
+        .imageAndCaption img {
+            width: 20vw;
+            height: auto;
+        }
+
+        .imageAndCaption a {
+            position: relative;
+            top: inherit;
+            vertical-align: middle;
+            margin-bottom: 10px;
+        }
+
+        .imageAndCaption p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            bottom: 0px;
+        }
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery {
+    background-color: #f6f6f6;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #000;
+}
+    .gallery img {
+        max-width: 60vw;
+        margin: 20px;
+        min-height: 400px;
+        margin-bottom: 20px;
+        border: 2px groove #333;
+    }
+
+    .gallery .horizline {
+        margin-bottom: 40px;
+    }
+
+    .gallery p {
+        margin-top: 20px;
+    }
+
+.code {
+    background-color: #999;
+    border: 2px dashed #000;
+    margin: 20px;
+    padding: 20px;
+    font-family: monospace;
+    line-break: strict;
+}
+
+.extLink {
+    background-color: #7e97e3;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #06F;
+    color: #000;
+}
+    .extLink a {
+        color: #FFF;
+    }
+
+        .extLink a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
