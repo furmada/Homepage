@@ -4,7 +4,7 @@ var isBig = true;
 var isSubPage = false;
 
 var menuProjects = [
-    ["Web Design", "projects/webdesign.html"],
+    ["Oracle Certification", "projects/oracle.html"],
     //["PiGlass", "projects/piglass.html"],
     //["Accessibility", "projects/accessibility.html"],
     ["GNews", "projects/gnews.html"],
