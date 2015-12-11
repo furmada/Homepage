@@ -97,7 +97,7 @@ function init() {
     document.getElementById("menu2").innerHTML = "";
     var div2 = document.createElement("div");
     var p2 = document.createElement("p");
-    p2.innerHTML = "Information";
+    p2.innerHTML = "More";
     $(div2).attr("id", "menu2div");
     document.getElementById("menu2").appendChild(div2);
     document.getElementById("menu2").appendChild(p2);
