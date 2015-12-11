@@ -44,7 +44,6 @@ function init() {
     if (mobilecheck()) {
         attachMobileCss();
     }
-    alert("Hello Sarah!");
     $('#admin_hidden').fadeOut();
     resizeHeader();
     document.getElementById("menu0").innerHTML = "";
