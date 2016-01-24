@@ -1,0 +1,64 @@
+﻿{
+  "images": [
+    {
+      "name": "00.JPG",
+      "project": "Project 0: Around the Block",
+      "description": "This shot of my roof on a summer day is still one of my favorites for its strong line and contrast."
+    },
+    {
+      "name": "01.png",
+      "project": "Project 1: Rule of Thirds",
+      "description": "The lack of color and unusual camera angle combine for a dramatic photograph."
+    },
+    {
+      "name": "02.png",
+      "project": "Project 2: Line, Shape, Form",
+      "description": "My first use of a film camera adds a warm fuzz to the image."
+    },
+    {
+      "name": "02_1.png",
+      "project": "Project 2: Line, Shape, Form",
+      "description": "The use of blank space creates another dramatic shot of Stadium."
+    },
+    {
+      "name": "03.png",
+      "project": "Project 3: Land Art",
+      "description": "The isolated color of this natural arrangement inspired by Andy Goldsworthy makes it memorable."
+    },
+    {
+      "name": "04.png",
+      "project": "Project 4: Texture, Value, Space",
+      "description": "This close-up shot of my violin under controlled lighting brings out the texture and contrast."
+    },
+    {
+      "name": "05.png",
+      "project": "Project 5: Color Arrangements",
+      "description": "A simple arrangement of colored paper still manages to astound due to its use of the Rule of Thirds."
+    },
+    {
+      "name": "07.png",
+      "project": "Project 7: Nikki McClure",
+      "description": "Given the phrase \"Share Your Table,\" I captured the warmth and color of a table set for a feast."
+    },
+    {
+      "name": "08.png",
+      "project": "Project 8: Emphasis",
+      "description": "An artfully framed shot of my dog, edited heavily to improve coloring."
+    },
+    {
+      "name": "09.png",
+      "project": "Project 9: Light pt. 1",
+      "description": "The ski slopes of Winthrop are cast in a striking silhouette from the sun behind."
+    },
+    {
+      "name": "10.png",
+      "project": "Project 10: Light pt. 2",
+      "description": "The diffused light of misty rain paired with precise composition show the magic of Tacoma."
+    },
+    {
+      "name": "10_1.png",
+      "project": "Project 10: Light pt. 2",
+      "description": "Light from a window shows the texture on my dog's face."
+    }
+  ]
+}
