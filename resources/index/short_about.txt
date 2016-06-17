@@ -1,0 +1,2 @@
+Hello, my name is Adam Furman. I am currently a 10th grade student at <div class="highlight" onclick="image_popout('Stadium High School', 'resources/index/stadium.jpg')">Stadium High School</div> in <div class="highlight" onclick="iframe_popout('Tacoma, WA', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86677.0142061774!2d-122.52527911388648!3d47.242860753660516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549054ee2b659567%3A0x62219c07ebb09e82!2sTacoma%2C+WA!5e0!3m2!1sen!2sus!4v1459311195125')">Tacoma</div>, Washington.
+I enjoy programming and web design.

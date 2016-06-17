@@ -1,0 +1,315 @@
+﻿@-webkit-keyframes highlight {
+  0%   { color: #262626; }
+  100%  { color: #6483e3; }
+}
+@-moz-keyframes highlight {
+  0%   { color: #262626; }
+  100%  { color: #6483e3; }
+}
+@-o-keyframes highlight {
+  0%   { color: #262626; }
+  100%  { color: #6483e3; }
+}
+@keyframes highlight {
+  0%   { color: #262626; }
+  100%  { color: #6483e3; }
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: #6483e3;
+    text-decoration: none;
+}
+    
+    a:hover{
+        text-decoration: underline;
+    }
+
+.header{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    padding-left: 5vw;
+    background-color: #dadada;
+}
+    .header:hover {
+        -webkit-animation: highlight 1s forwards;
+        -moz-animation: highlight 1s forwards;
+        -o-animation: highlight 1s forwards;
+        animation: highlight 1s forwards;
+    }
+
+    #header-title{
+        line-height: 10vh;
+        font-size: 4em;
+    }
+
+        #header-title:hover{
+            color: #6483e3;
+        }
+
+    #header-buttons{
+        height: 100%;
+        margin-left: auto;
+        display: inline-flex;
+    }
+
+   .button{
+        background-color: #262626;
+        color: #dadada;
+        height: 100%;
+        min-width: 10vw;
+        text-align: center;
+        line-height: 10vh;
+    }
+
+        .button:hover{
+            background-color: #dadada;
+            color: #262626;
+            height: 100%;
+            min-width: 10vw;
+        }
+
+.content{
+    width: 90vw;
+    height: 90vh;
+    margin-top: 10vh;
+    margin-left: 5vw;
+
+    background-color: #ffffff;
+    border-left: 1px #262626 dashed;
+    border-right: 1px #262626 dashed;
+    padding: 3% 5% 3% 5%;
+    box-shadow: 5px 5px #262626;
+    height: auto;
+    min-height: 90vh;
+}
+
+.footer{
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    background-color: #262626;
+    color: #dadada;
+    margin-top: 2vh;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: #262626;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.popout{
+    position: fixed;
+    top: 15vh;
+    left: 15vw;
+    width: 70vw;
+    height: 70vh;
+    z-index: 3;
+
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px #262626 dashed;
+    background-color: #dadada;
+}
+
+    #popout-title{
+        background-color: #262626;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 26px;
+        color: #dadada;
+        display: flex;
+        padding-left: 5px;
+   }
+
+        #popout-close{
+            background-color: #262626;
+            color: #dadada;
+            width: 25%;
+            height: 100%;
+            text-align: center;
+            margin-left: auto;
+        }
+
+        #popout-close:hover{
+            background-color: #dadada;
+            color: #262626;
+            width: 25%;
+            height: 100%;
+            text-align: center;
+        }
+
+    #popout-content{
+        height: 100%;
+        height: calc(100% - 50px);
+        padding: 5px;
+    }
+
+    #popout img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #popout iframe{
+        width: 100%;
+        padding: 0;
+    }
+
+.item{
+    margin: 30px 5px 30px 5px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    display: normal;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+    .item-left{
+        width: 30%;
+        padding: 5px 3% 5px 3%;
+    }
+
+        .item-left *{
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+        }
+
+    .item-right{
+        width: 70%;
+        padding: 3px;
+        margin-left: auto;
+    }
+
+        .item-right ul, .item-right ol{
+            margin-left: 2em;
+        }
+
+.card{
+    width: 20%;
+    height: 18vw;
+    border: 2px solid #262626;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #dadada;
+    display: inline-block;
+    margin: 5px;
+}
+
+    .card:hover{
+        border: 2px solid #6483e3;
+    }
+
+    .card-top{
+        width: 100%;
+        height: 75%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #262626;
+    }
+
+        .card-top *{
+            display: block;
+            max-height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+
+    .card-bottom{
+        width: 100%;
+        height: 25%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+.gallery{
+    width: 50vw;
+    min-height: 60vh;
+    background-color: #dadada;
+    border: 2px solid #262626;
+    margin: 10px;
+}
+
+    .gallery-bottom{
+        width: 100%;
+        height: 15vh;
+        max-height: 15vh;
+        display: block;
+        border-top: 1px solid #262626;
+        padding: 2px;
+    }
+
+        .gallery-bottom img{
+            height: 14vh;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+            .gallery-bottom img:hover{
+                border: 1px solid #6483e3;
+            }
+
+    .gallery-top{
+        height: 45vh;
+    }
+
+        .gallery-top *{
+            display: inline-block;
+            margin-right: -4px;
+        }
+
+    .gallery-img-holder{
+        width: 90%;
+        height: 100%;
+    }
+
+        .gallery-img{
+            max-width: 100%;
+            max-height: 100%;
+            min-height: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+    .gallery-nav-left{
+        width: 5%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+    .gallery-nav-right{
+        width: 5%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+.highlight{
+    display: inline;
+    background-color: #6483e3;
+    color: #ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+}
+    .highlight:hover{
+        color: #6483e3;
+        background-color: #ffffff;
+    }

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Python OS</title>
+
+    <script type="text/javascript" src="../../js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="interactive.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="interactive.css" />
+</head>
+<body onload="loadPageContent(null, true)">
+    <div class="content" id="content">
+        <h2>Python OS</h2>
+                
+        <div class="item">
+            <div class="item-left">
+                <div id="interactive" onmouseout="displayHoverHint('reset')">
+                    <img src="top_home.png" id="interactive-top" onmouseover="displayHoverHint(this)" onclick="clickAppBg()" />
+                    <img src="menu.png" id="interactive-menu" onclick="open_launcher()" onmouseover="displayHoverHint(this)" />
+                    <img src="bottom_home.png" id="interactive-bottom" onmouseover="displayHoverHint(this)" />
+                    <div id="interactive-notification" onclick="open_notifications()" onmouseover="displayHoverHint(this)"></div>
+                </div>
+            </div>
+            <div class="item-right" id="interactive-textArea">
+                <h2>Interactive Demo</h2>
+                <p>Try out Python OS in the demo on the left!</p><br />
+                <ul>
+                    <li>Click the menu button on the lower left to open the launcher or close the current app.</li>
+                    <li>Click the clock on the lower right to open the notification panel.</li>
+                    <li>In the Launcher, click on an app to try it out.</li>
+                </ul>
+                <br />
+                <div id="interactive-hoverHint">Hover over parts of the demo to see what they do.</div>
+                <br />
+            </div>
+        </div>
+
+        <div class="gallery" onloadstart="loadGallery('gallery.json', this)" data-current="0">
+            <div class="gallery-top">
+                <div class="gallery-nav-left"></div>
+                <div class="gallery-img-holder"><img class="gallery-img" /></div>
+                <div class="gallery-nav-right" onclick="galleryNext(this)"></div>
+            </div>
+            <div class="gallery-bottom">
+
+            </div>
+        </div>
+        
+        <div class="card" onclick="window.open('https://www.github.com/furmada/PythonOS')">
+            <div class="card-top">
+                <img src="../../resources/index/github.png" />
+            </div>
+            <div class="card-bottom">
+                <p>GitHub</p>
+            </div>
+        </div>
+        <div class="card" onclick="window.open('http://www.pygame.org/project-Python+OS+6-2984-4961.html')">
+            <div class="card-top">
+                <img src="../../resources/index/website.png" />
+            </div>
+            <div class="card-bottom">
+                <p>Pygame.org</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

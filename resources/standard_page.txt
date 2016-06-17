@@ -1,0 +1,15 @@
+<!-- PAGE CONTENT INSERTED BY SCRIPT -->
+<div class="header" id="header">
+    <h1 id="header-title" data-href="REP/index.html" onclick="button(this)">Adam Furman</h1>
+    <div id="header-buttons">
+        <div id="header-button-about" class="button" data-href="REP/about.html" onclick="button(this)">About</div>
+        <div id="header-button-projects" class="button" data-href="REP/projects.html" onclick="button(this)">Projects</div>
+        <div id="header-button-school" class="button" data-href="http://www.stadiumtigers.org" data-isExt="yes" onclick="button(this)">Stadium</div>
+    </div>
+</div>
+<div class="content" id="content">
+
+	<div class="footer">
+        <p>Webpage by Adam Furman.</p>
+    </div>
+</div>

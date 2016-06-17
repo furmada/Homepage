@@ -1,0 +1,10 @@
+<p>Captain Kirk looks for his ideal girlfriend... in Spanish. Made for that class.</p>
+<div class="line"></div>
+<div class="card" onclick="window.open('project/spanishtrek/index.htm')">
+    <div class="card-top">
+        <img src="resources/index/website.png" />
+    </div>
+    <div class="card-bottom">
+        <p>Open</p>
+    </div>
+</div>

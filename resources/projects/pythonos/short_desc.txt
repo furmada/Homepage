@@ -1,0 +1,19 @@
+<p>Python OS is a complete UI and app management system for Raspberry Pi microcomputers with a touchscreen display attached.
+It features an event-based, fully extendable UI, a set of basic applications, and a built-in marketplace for app distribution and updates.</p>
+<div class="line"></div>
+<div class="card" onclick="window.open('https://www.github.com/furmada/PythonOS')">
+    <div class="card-top">
+        <img src="resources/index/github.png" />
+    </div>
+    <div class="card-bottom">
+        <p>GitHub</p>
+    </div>
+</div>
+<div class="card" onclick="window.open('project/pythonos/index.html', '_self')">
+    <div class="card-top">
+        <img src="resources/index/website.png" />
+    </div>
+    <div class="card-bottom">
+        <p>More</p>
+    </div>
+</div>
