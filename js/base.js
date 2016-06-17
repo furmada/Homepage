@@ -1,4 +1,4 @@
-BASE_URL = "file://C:/Users/Adam/Documents/GitHub/Homepage/";
+﻿BASE_URL = "http://furmada.github.io/Homepage/";
 NUM_BACK = 0;
 
 function getNumBack(cls) {
