@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>LCARS</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+	
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>	
+</head>
+<body>
+
+<div id="container">
+	
+	<div id="lcars" style="display:none; padding:5px;">
+	
+		<div class="flexcontainer" style="width:1024px;">
+			<div id="section_left" class="flexitem">
+
+				<div class="flexcontainer">
+					<div class="flexitem">
+						<div class="flexrow">
+							<!-- left section head -->
+							<span class="flexitem capL colgrp5_3" id="top_leftcap" style="float:left;width:31px; height: 32px;margin-right:4px;"></span>
+							<span class="flexitem col_7" id="LCARS47" style="position:absolute; left:40px; width:108px; float:left;font-size:3.0em;line-height:37px;">LCARS</span>
+							<span class="flexitem colgrp5_6" id="top_elbowbar" style="margin-left:104px; float:left;width:38px; height: 32px;"></span>
+							<div class="flexitem elbow topRight colgrp5_6" id="topright_elbow" style="float:left;width: 30px; height: 47px;border-top-right-radius: 30px;">
+								<div class="colgrp5_6" style="position:absolute;top:0px;left:-1px;width:2px; height:32px;"></div>
+								<div class="colgrp5_6" style="position:absolute;bottom:-1px;right:0px;width:16px; height:2px;"></div>
+								<div class="innerCurve" style="top:26px;left:0px;width:14px; height:14px;"></div>
+								<div style="position:absolute;background-color:black;top:32px;left:-10px;width:24px; height:16px;"></div>
+							</div>				
+						</div>
+					</div>
+					<div class="flexitem flexgrow">
+						
+						<!-- left section bar -->
+						<span class="flexitem flexend colgrp5_6" id="leftbar_elbowbart" style="float:right;width:16px; height: 32px;margin-right:1px;"></span>
+						<span class="flexitem flexend colgrp5_9" id="leftbar_blue" style="position:relative;right:-21px;float:right;width:38px; height: 32px;margin-top:5px; clear:both;"></span>
+						<span class="flexitem flexend colgrp5_3" id="leftbar_ppl" style="position:relative;right:-21px;float:right;width:38px; height: 20px;margin-top:5px; clear:both;"></span>
+						<span class="flexitem flexend colgrp5_9" id="leftbar_mid" style="float:right;width:16px; height: 200px;margin-top:5px; margin-right:1px; clear:both;"></span>
+						<span class="flexitem flexend colgrp5_2" id="leftbar_org" style="position:relative;right:-21px;float:right;width:38px; height: 16px;margin-top:5px; clear:both;"></span>
+						<span class="flexitem flexend colgrp5_2" id="leftbar_elbowbarb" style="float:right;width:16px; height: 120px;margin-top:5px; margin-right:1px; clear:both;"></span>
+						
+						<!-- left section content : buttons -->
+						<div style="width:185px; position: absolute;">
+							
+							<div class="flexrow activebutton" style="padding-right: 10px;padding-top:36px;" data-sound="0">
+								<span class="flexitem button capL colgrp5_9" id="button1_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_6" id="button1_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button1_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">47</span>
+								<span data-label="INICIO" id="button1_right" class="flexitem flexgrow capR button colgrp5_5" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px; padding-top:20px;" data-sound="0">
+								<span class="flexitem button capL colgrp5_5" id="button2_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button" id="button2_bar" style="background-color:#000; border-color:#000; float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button2_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">14</span>
+								<span data-label="INFORMACION" onclick="toggleInfo();" id="button2_right" class="flexitem flexgrow button capR colgrp5_3" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px;" data-sound="1">
+								<span class="flexitem button capL colgrp5_3" id="button3_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_6 flash" id="button3_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button3_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">&nbsp;2</span>
+								<span class="flexitem flexgrow button" id="button3_right" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px;" data-sound="1">
+								<span class="flexitem button capL colgrp5_5" id="button4_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_6" id="button4_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button4_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">30</span>
+								<span class="flexitem flexgrow button" id="button4_right" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px;padding-top:38px;" data-sound="0">
+								<span class="flexitem button capL" id="button5_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp4_2" id="button5_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button5_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">67</span>
+								<span data-label="73-998485" id="button5_right" class="flexitem flexgrow button capR colgrp5_5" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px;" data-sound="1">
+								<span class="flexitem button capL colgrp5_3" id="button6_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_5" id="button6_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button6_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;"></span>
+								<span id="button6_right" class="flexitem flexgrow button" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px; padding-top:5px;" data-sound="0">
+								<span class="flexitem button capL" id="button7_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_2 flash" id="button7_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button7_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">89</span>
+								<span data-label="16-996485" id="button7_right" class="flexitem flexgrow button capR colgrp5_3" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px;" data-sound="0">
+								<span class="flexitem button capL colgrp5_7" id="button8_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_6" id="button8_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button8_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">&nbsp;1</span>
+								<span data-label="TACOMA" onclick="window.open('http://www.tacoma.k12.wa.us')" id="button8_right" class="flexitem flexgrow button capR colgrp5_2" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+						
+						</div>
+
+					</div>
+
+					<div class="flexitem" style="clear:both;">
+						<!-- left section base -->
+						<div class="flexrow flexend" style="padding-right:1px;">
+							<span class="flexitem capL colgrp5_7" id="base_leftcap" style="float:left;width:32px; height: 32px;margin-right:4px;"></span>
+							<span data-label="PROGRAM ACCESS" onclick="toggleFullScreen();" data-sound="0" id="base_btn1" class="flexitem flexgrow button colgrp5_6 activebutton" style="float:left; width:50px; height: 32px;"></span>
+							<span class="flexitem colgrp5_2" id="base_elbowbar" style="float:left;width:37px; height: 32px;margin-left:4px;"></span>
+							<div class="flexitem elbow bottomRight colgrp5_2" id="bottright_elbow" style="float:left;width: 30px; height: 47px;border-bottom-right-radius: 30px;">
+								<div class="colgrp5_2" style="position:absolute;bottom:0px;left:-1px;width:2px; height:32px;"></div>
+								<div class="colgrp5_2" style="position:absolute;top:-1px;right:0px;width:16px; height:2px;"></div>
+								<div class="innerCurve" style="top:2px;left:0px;width:14px; height:14px;"></div>
+								<div style="position:absolute;background-color:black;top:-1px;left:-10px;width:24px; height:16px;"></div>
+							</div>				
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div id="section_right">
+				
+				<div class="flexcontainer" style="height:539px;">
+					
+					<!-- right section head -->					
+					<div class="flexitem">
+						<div class="flexrow">
+							<div class="flexitem elbow topLeft colgrp5_3" id="topleft_elbow" style="float:left;width: 30px; height: 47px;border-top-left-radius: 30px; margin-left:5px;">
+								<div class="innerCurve" style="top:27px;left:10px;width:14px; height:14px;"></div>
+								<div style="position:absolute;background-color:black;top:32px;left:16px;width:24px; height:16px;"></div>
+								<div class="colgrp5_3" style="position:absolute;top:0px;right:-1px;width:2px; height:32px;"></div>
+								<div class="colgrp5_3" style="position:absolute;bottom:-1px;left:0px;width:16px; height:2px;"></div>
+							</div>		
+							<span class="flexitem flexgrow colgrp5_3" id="topr_elbowbar" style="float:left;width:37px; height: 32px; margin-right:5px;"></span>
+							<span class="flexitem col_1" id="TIMEBEACON" style="float:left;font-size:3.0em;line-height:37px;">PERFILES</span>
+							<span class="flexitem capR colgrp5_7" id="topr_endcap" style="float:left;width:32px; height: 32px;margin-left:4px;"></span>
+						</div>
+					</div>		
+					
+					<!-- right section -->
+					<div class="flexitem flexgrow">
+						
+						<!--right section bar -->
+						<span class="flexitem colgrp5_3" id="rightbar_elbowbart" style="float:left;width:16px; height: 32px;margin-left:5px;"></span>
+						<span class="flexitem colgrp5_4" id="rightbar_prplbar" style="float:left;width:16px; height: 52px;margin-top:67px; margin-left:5px; clear:both;"></span>
+						<span class="flexitem flexgrow colgrp5_9" id="rightbar_bluebar" style="float:left;width:16px; height: 143px;margin-top:5px; margin-left:5px; clear:both;"></span>
+						<span class="flexitem colgrp5_7" id="rightbar_elbowbarb" style="float:left;width:16px; height: 120px;margin-top:26px; margin-left:5px; clear:both;"></span>
+						
+						<!-- right section content : TIME INFO -->
+						<div style="margin-left:40px;display:none;" id="timeinfo">
+							<div class="col_1" style="padding-top:10px; font-size:2.3em;">BASE DE PERFILOS</div>
+							<div class="col_6" style="font-size:1.8em;line-height:1em;padding-top:5px;">
+								<p>
+                                    La Base de Perfilos es una base de información para todas las personas en la Federación de Planetas.
+                                    Aquí se puede buscar y ver informacion, fotos, y comentarios de estas personas. Para enscribirse, usted
+                                    necesite vivir en Tierra, Vulcan, Andoria, o Betazed. Este servicio es illegal en Romulus.
+                                </p>
+                                <img src="federation.jpg" alt="Federation Logo" style="width: 30vw" />
+							</div>
+						</div>
+						
+						<!-- right section content : STAR DATE -->
+						<div style="margin-left:40px; overflow-y: scroll; height: 45vh;" class="showscreen" id="stardate">
+							<div class="col_1" style="padding-top:45px; font-size:2.3em;">JAMES T. KIRK</div>
+											
+                            <div class="flexcontainer">
+                                <div class="flexitem">
+                                    <div class="flexrow">
+                                        <div class="flexitem text" style="width: 100%;">
+                                            <img src="kirk_profile.jpg" alt="kirk" style="width: 5vw; display: inline-block" />
+                                            <div style="display: inline-block">
+                                                <p style="display: inline-block">Yo soy el capitán de la Enterprise.</p>
+                                                <a href="kirk.htm">Ver Perfil</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_1" style="padding-top:45px; font-size:2.3em;">SPOCK</div>
+
+                                <div class="flexcontainer">
+                                    <div class="flexitem">
+                                        <div class="flexrow">
+                                            <div class="flexitem text" style="width: 100%;">
+                                                <img src="spock_profile.jpg" alt="spock" style="width: 5vw; display: inline-block" />
+                                                <div style="display: inline-block">
+                                                    <p style="display: inline-block">Larga vida y prosperidad.</p>
+                                                    <a href="">Ver Perfil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_1" style="padding-top:45px; font-size:2.3em;">PAVEL CHEKOV</div>
+
+                                <div class="flexcontainer">
+                                    <div class="flexitem">
+                                        <div class="flexrow">
+                                            <div class="flexitem text" style="width: 100%;">
+                                                <img src="checkov_profile.jpg" alt="chekov" style="width: 5vw; display: inline-block" />
+                                                <div style="display: inline-block">
+                                                    <p style="display: inline-block">¿Dónde están los buques nucleares?</p>
+                                                    <a href="">Ver Perfil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_1" style="padding-top:45px; font-size:2.3em;">KOR</div>
+
+                                <div class="flexcontainer">
+                                    <div class="flexitem">
+                                        <div class="flexrow">
+                                            <div class="flexitem text" style="width: 100%;">
+                                                <img src="kor_profile.jpg" alt="kirk" style="width: 5vw; display: inline-block" />
+                                                <div style="display: inline-block">
+                                                    <p style="display: inline-block">DIvI' nuch muS jIH!</p>
+                                                    <a href="">Ver Perfil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                            <div class="flexitem">
+                                                <div class="col_1" id="audioalert" style="display:none; font-size:2.0em; padding-top:20px;">AUDIO IS NOT CURRENTLY SUPPORTED ON THIS BROWSER</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- right section base -->
+                                <div class="flexitem" style="clear:both;">
+                                    <div class="flexrow flexend" style="padding-right:1px;">
+                                        <div class="flexitem elbow bottomLeft colgrp5_7" id="bottleft_elbow" style="float:left;width: 30px; height: 47px;border-bottom-left-radius: 30px;margin-left:5px;">
+                                            <div class="innerCurve" style="top:2px;left:10px;width:14px; height:14px;"></div>
+                                            <div style="position:absolute;background-color:black;top:-1px;left:16px;width:24px; height:16px;"></div>
+                                            <div class="colgrp5_7" style="position:absolute;bottom:0px;right:-1px;width:2px; height:32px;"></div>
+                                            <div class="colgrp5_7" style="position:absolute;top:-1px;left:0px;width:16px; height:2px;"></div>
+                                        </div>
+                                        <span class="flexitem flexgrow colgrp5_7" id="bottleft_elbowbar" style="float:left;width:37px; height: 32px; margin-right:5px;"></span>
+                                        <span data-label="25-998325" id="bottleft_button1" data-sound="0" class="flexitem button colgrp5_2 activebutton" style="float:left; width:100px; height: 32px; margin-right: 5px;"></span>
+                                        <span data-label="ADAM FURMAN" onclick="window.open('http://furmada.github.io/Homepage/')" id="bottleft_button2" data-sound="0" class="flexitem button colgrp5_4 activebutton" style="float:left; width:100px; height: 32px;"></span>
+                                        <span class="flexitem capR colgrp5_3" id="bottleft_endcap" style="float:left;width:32px; height: 32px;margin-left:5px;"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+</body>
+</html>

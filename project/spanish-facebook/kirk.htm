@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>PERFIL: KIRK</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+	
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>	
+</head>
+<body>
+
+<div id="container">
+	
+	<div id="lcars" style="display:none; padding:5px;">
+	
+		<div class="flexcontainer" style="width:1024px;">
+			<div id="section_left" class="flexitem">
+
+				<div class="flexcontainer">
+					<div class="flexitem">
+						<div class="flexrow">
+							<!-- left section head -->
+							<span class="flexitem capL colgrp5_3" id="top_leftcap" style="float:left;width:31px; height: 32px;margin-right:4px;"></span>
+							<span class="flexitem col_7" id="LCARS47" style="position:absolute; left:40px; width:108px; float:left;font-size:3.0em;line-height:37px;">LCARS</span>
+							<span class="flexitem colgrp5_6" id="top_elbowbar" style="margin-left:104px; float:left;width:38px; height: 32px;"></span>
+							<div class="flexitem elbow topRight colgrp5_6" id="topright_elbow" style="float:left;width: 30px; height: 47px;border-top-right-radius: 30px;">
+								<div class="colgrp5_6" style="position:absolute;top:0px;left:-1px;width:2px; height:32px;"></div>
+								<div class="colgrp5_6" style="position:absolute;bottom:-1px;right:0px;width:16px; height:2px;"></div>
+								<div class="innerCurve" style="top:26px;left:0px;width:14px; height:14px;"></div>
+								<div style="position:absolute;background-color:black;top:32px;left:-10px;width:24px; height:16px;"></div>
+							</div>				
+						</div>
+					</div>
+					<div class="flexitem flexgrow">
+						
+						<!-- left section bar -->
+						<span class="flexitem flexend colgrp5_6" id="leftbar_elbowbart" style="float:right;width:16px; height: 32px;margin-right:1px;"></span>
+						<span class="flexitem flexend colgrp5_9" id="leftbar_blue" style="position:relative;right:-21px;float:right;width:38px; height: 32px;margin-top:5px; clear:both;"></span>
+						<span class="flexitem flexend colgrp5_3" id="leftbar_ppl" style="position:relative;right:-21px;float:right;width:38px; height: 20px;margin-top:5px; clear:both;"></span>
+						<span class="flexitem flexend colgrp5_9" id="leftbar_mid" style="float:right;width:16px; height: 200px;margin-top:5px; margin-right:1px; clear:both;"></span>
+						<span class="flexitem flexend colgrp5_2" id="leftbar_org" style="position:relative;right:-21px;float:right;width:38px; height: 16px;margin-top:5px; clear:both;"></span>
+						<span class="flexitem flexend colgrp5_2" id="leftbar_elbowbarb" style="float:right;width:16px; height: 120px;margin-top:5px; margin-right:1px; clear:both;"></span>
+						
+						<!-- left section content : buttons -->
+						<div style="width:185px; position: absolute;">
+							
+							<div class="flexrow activebutton" style="padding-right: 10px;padding-top:36px;" data-sound="0">
+								<span class="flexitem button capL colgrp5_9" id="button1_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_6" id="button1_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button1_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">47</span>
+								<span data-label="INICIO" onclick="window.open('index.htm', '_self');" id="button1_right" class="flexitem flexgrow capR button colgrp5_5" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px; padding-top:20px;" data-sound="0">
+								<span class="flexitem button capL colgrp5_5" id="button2_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button" id="button2_bar" style="background-color:#000; border-color:#000; float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button2_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">14</span>
+								<span data-label="MERCADO" onclick="toggleScreen('timeinfo');" id="button2_right" class="flexitem flexgrow button capR colgrp5_3" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px;" data-sound="1">
+								<span class="flexitem button capL colgrp5_3" id="button3_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_6 flash" id="button3_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button3_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">&nbsp;2</span>
+								<span class="flexitem flexgrow button" id="button3_right" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+
+							<div class="flexrow activebutton" style="padding-right: 10px;" data-sound="1">
+								<span class="flexitem button capL colgrp5_5" id="button4_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_6" id="button4_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button4_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">30</span>
+								<span class="flexitem flexgrow button" id="button4_right" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px;padding-top:38px;" data-sound="0">
+								<span class="flexitem button capL" id="button5_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp4_2" id="button5_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button5_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">67</span>
+								<span data-label="PREFERENCIAS" onclick="toggleScreen('preferencias')" id="button5_right" class="flexitem flexgrow button capR colgrp5_5" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px;" data-sound="1">
+								<span class="flexitem button capL colgrp5_3" id="button6_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_5" id="button6_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button6_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;"></span>
+								<span id="button6_right" class="flexitem flexgrow button" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px; padding-top:5px;" data-sound="0">
+								<span class="flexitem button capL" id="button7_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_2 flash" id="button7_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button7_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">89</span>
+								<span data-label="OPINIONES" onclick="toggleScreen('opiniones')" id="button7_right" class="flexitem flexgrow button capR colgrp5_3" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+
+							<div class="flexrow activebutton" style="padding-right: 10px;" data-sound="0">
+								<span class="flexitem button capL colgrp5_7" id="button8_lcap" style="float:left; width:33px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button colgrp5_6" id="button8_bar" style="float:left; width:10px; height: 32px; margin-right:5px;"></span>
+								<span class="flexitem button col_1" id="button8_num" style="float:left;font-size:2.9em;line-height:39px; margin-right:5px;">&nbsp;1</span>
+								<span data-label="EVENTOS" onclick="toggleScreen('eventos')" id="button8_right" class="flexitem flexgrow button capR colgrp5_2" style="float:left; width:50px; height: 32px;"></span>
+							</div>
+						
+						</div>
+
+					</div>
+
+					<div class="flexitem" style="clear:both;">
+						<!-- left section base -->
+						<div class="flexrow flexend" style="padding-right:1px;">
+							<span class="flexitem capL colgrp5_7" id="base_leftcap" style="float:left;width:32px; height: 32px;margin-right:4px;"></span>
+							<span data-label="PROGRAM ACCESS" onclick="toggleFullScreen();" data-sound="0" id="base_btn1" class="flexitem flexgrow button colgrp5_6 activebutton" style="float:left; width:50px; height: 32px;"></span>
+							<span class="flexitem colgrp5_2" id="base_elbowbar" style="float:left;width:37px; height: 32px;margin-left:4px;"></span>
+							<div class="flexitem elbow bottomRight colgrp5_2" id="bottright_elbow" style="float:left;width: 30px; height: 47px;border-bottom-right-radius: 30px;">
+								<div class="colgrp5_2" style="position:absolute;bottom:0px;left:-1px;width:2px; height:32px;"></div>
+								<div class="colgrp5_2" style="position:absolute;top:-1px;right:0px;width:16px; height:2px;"></div>
+								<div class="innerCurve" style="top:2px;left:0px;width:14px; height:14px;"></div>
+								<div style="position:absolute;background-color:black;top:-1px;left:-10px;width:24px; height:16px;"></div>
+							</div>				
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div id="section_right">
+				
+				<div class="flexcontainer" style="height:539px;">
+					
+					<!-- right section head -->					
+					<div class="flexitem">
+						<div class="flexrow">
+							<div class="flexitem elbow topLeft colgrp5_3" id="topleft_elbow" style="float:left;width: 30px; height: 47px;border-top-left-radius: 30px; margin-left:5px;">
+								<div class="innerCurve" style="top:27px;left:10px;width:14px; height:14px;"></div>
+								<div style="position:absolute;background-color:black;top:32px;left:16px;width:24px; height:16px;"></div>
+								<div class="colgrp5_3" style="position:absolute;top:0px;right:-1px;width:2px; height:32px;"></div>
+								<div class="colgrp5_3" style="position:absolute;bottom:-1px;left:0px;width:16px; height:2px;"></div>
+							</div>		
+							<span class="flexitem flexgrow colgrp5_3" id="topr_elbowbar" style="float:left;width:37px; height: 32px; margin-right:5px;"></span>
+							<span class="flexitem col_1" id="TIMEBEACON" style="float:left;font-size:3.0em;line-height:37px;">JAMES T. KIRK</span>
+							<span class="flexitem capR colgrp5_7" id="topr_endcap" style="float:left;width:32px; height: 32px;margin-left:4px;"></span>
+						</div>
+					</div>		
+					
+					<!-- right section -->
+					<div class="flexitem flexgrow">
+						
+						<!--right section bar -->
+						<span class="flexitem colgrp5_3" id="rightbar_elbowbart" style="float:left;width:16px; height: 32px;margin-left:5px;"></span>
+						<span class="flexitem colgrp5_4" id="rightbar_prplbar" style="float:left;width:16px; height: 52px;margin-top:67px; margin-left:5px; clear:both;"></span>
+						<span class="flexitem flexgrow colgrp5_9" id="rightbar_bluebar" style="float:left;width:16px; height: 143px;margin-top:5px; margin-left:5px; clear:both;"></span>
+						<span class="flexitem colgrp5_7" id="rightbar_elbowbarb" style="float:left;width:16px; height: 120px;margin-top:26px; margin-left:5px; clear:both;"></span>
+						
+						<!-- right section content : TIME INFO -->
+						<div style="margin-left:40px;display:none;" id="timeinfo">
+							<div class="col_6" style="font-size:1.8em;padding-top:5px; overflow-y: scroll; height: 50vh">
+                                <div class="col_1" style="padding-top:10px; font-size:2em;">MERCADO</div>
+                                <div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="padd.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">BUSCO</h3>
+                                            <p>Estoy buscando un PADD que tenga informaciones de la seguridad.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="tribbles.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">VENDO</h3>
+                                            <p>Tengo que vender estos Tribbles muy pronto. ¡Cada minuto hay más!</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="cloak.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">VENDO</h3>
+                                            <p>Esto dispositivo es muy secreto. Cuando lo uso, no se puede ver mi nave. Expecto un precio alto.</p>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div style="width: 100%; height: 3px; background-color: #774466; padding-bottom: 1em;"></div>
+                                <div class="col_1" style="padding-top:10px; font-size:2em;">TIENDAS</div>
+                                <div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="quarks.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 4vw">
+                                            <h3 class="col_1">Quark's</h3>
+                                            <p>Un buen sitio para festejar con amigos, pero es necesario quidarse para que no le roban.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="replicator.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">El Replicador</h3>
+                                            <p>Del minuto que conocí esto, nunca ha ido al supermercado.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="utopiaplanitia.png" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">Utopia Planitia</h3>
+                                            <p>Construyen las mejores naves en la galaxía. Mi amigo de la Academía trabaja allí.</p>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+
+                        <div style="margin-left:40px;display:none;" id="preferencias">
+                            <div class="col_6" style="font-size:1.8em;padding-top:5px; overflow-y: scroll; height: 50vh">
+                                <div class="col_1" style="padding-top:10px; font-size:2em;">PREFERENCIAS</div>
+                                <div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="mobydick.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">Moby Dick</h3>
+                                            <p>Un libro clásico de la historia de Tierra que me gusta mucho, me ayudó una vez en una pelea.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="kor_profile.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">Klingons</h3>
+                                            <p>No aguanto los Klingons. Me caen muy gordos y groseros.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="enterprise.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">Mi Nave</h3>
+                                            <p>La nave Enterprise es la mejor de todos. Tiene la mejor tripulación, y el mejor capitán.</p>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div style="width: 100%; height: 3px; background-color: #774466; padding-bottom: 1em;"></div>
+                                <div class="col_1" style="padding-top:10px; font-size:2em;">ACTIVIDADES</div>
+                                <div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="racquetball.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 4vw">
+                                            <h3 class="col_1">Racquetball</h3>
+                                            <p>Un deporte jugado adentro de un salón, muy rápido e difícil. Se juega bien en un nave con poco espacio.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="ajedrez.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">El Ajedrez</h3>
+                                            <p>Lo juego con gusto con mi amigo Spock. Pero siempre gana él, pienso que yo soy demasiado emocional.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <img src="risa.jpg" style="width: 10vw; display:inline-block" />
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">Relajarme</h3>
+                                            <p>Después de un dia loco, mi sitio favorito para relejarme es la planeta Risa. Piensan, ¡un planeta modificada para crear la mejor vacación!</p>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+                        </div>
+
+                        <div style="margin-left:40px;display:none;" id="opiniones">
+                            <div class="col_1" style="padding-top:10px; font-size:2.3em;">OPINIONES</div>
+                            <div class="col_6" style="font-size:1.8em;line-height:1em;padding-top:5px;">
+                                <div style="overflow-y: scroll; height: 45vh">
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">El Paz Mundial</h3>
+                                            <p>Siempre quería el paz en todo el mundo. Las guerras son malas para todas las personas. Me alergre mucho que tenemos paz en Tierra ahora.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">La Educación</h3>
+                                            <p>Pienso que es necesario que los niños reciban una educación completa y comprehensiva.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">El Racismo</h3>
+                                            <p>Es importante combatir el racismo en todos los partes del su vida. Si no, la socialidad pierde mucho.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">La Desigualidad</h3>
+                                            <p>La desigualidad, especialmente entre los hombres y las mujeres, es un problema grande. Hay que aprobar leyes para arreglarla.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">El Hambre</h3>
+                                            <p>No puedo dormir cuando todavía hay personas en la galaxía que pasen hambre.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-left:40px;display:none;" id="eventos">
+                            <div class="col_1" style="padding-top:10px; font-size:2.3em;">EVENTOS</div>
+                            <div class="col_6" style="font-size:1.8em;line-height:1em;padding-top:5px;">
+                                <p>James Kirk tiene tres eventos en su lista.</p>
+                                <div style="overflow-y: scroll; height: 40vh">
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">Reunión de Personal</h3>
+                                            <p>Mañana será el reunión de personal semanal. Exijo que los oficiales superiores estén en mi salón a las ocho.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">Fiesta para Chekov</h3>
+                                            <p>Hoy es el cumpleaños de Chekov. Cumple 26 años. Le gusta mucho la chocolate y la literatura rusa, entonces son buenas ideas para regalos.</p>
+                                        </div>
+                                    </div>
+                                    <div style="border: 1px solid #6688CC; border-radius: 5px; padding: 1vw; margin: 0.5vw;">
+                                        <div style="display: inline-block; margin-left: 5vw">
+                                            <h3 class="col_1">Simularco de Batalla</h3>
+                                            <p>Ayer a las trece fue un simularco de batalla. Bien hecho a todo el tripulación que respondí pronto y con calma.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+						<!-- right section content : STAR DATE -->
+						<div style="margin-left:40px; overflow-y: scroll; height: 50vh;" class="showscreen" id="stardate">
+							<div class="col_1" style="padding-top:10px; font-size:2.3em;">¿QUE PIENSAS?</div>
+											
+							<div class="flexcontainer">
+								<div class="flexitem">
+									<div class="flexrow">
+                                        <div class="flexitem text" style="width: 100%;">
+                                            <img src="kirk_profile.jpg" alt="kirk" style="width: 5vw; display: inline-block" />
+                                            <div style="display: inline-block">
+                                                <p style="display: inline-block">Tengo ganas de regresar a Risa muy pronto.</p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+								
+								<div class="flexitem">
+									<div class="col_1" id="audioalert" style="display:none; font-size:2.0em; padding-top:20px;">AUDIO IS NOT CURRENTLY SUPPORTED ON THIS BROWSER</div>
+								</div>
+							</div>
+
+                            <div class="col_1" style="padding-top:45px; font-size:2.3em;">AMIGOS</div>
+
+                            <div class="flexcontainer">
+                                <div class="flexitem">
+                                    <div class="flexrow">
+                                        <div class="flexitem text" style="width: 100%;">
+                                            <p>Estos son amigos de James Kirk:</p>
+                                            <ul>
+                                                <li>Spock</li>
+                                                <li>Leonard McCoy</li>
+                                                <li>Hikaru Sulu</li>
+                                                <li>Nyota Uhura</li>
+                                                <li>Montgomery Scott</li>
+                                                <li>Pavel Chekov</li>
+                                            </ul>
+                                            <p>James Kirk no tiene una novia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="width: 100%; height: 3px; background-color: #774466"></div>
+
+                            <div class="col_1" style="padding-top:45px; font-size:2.3em;">ÚLTIMOS MENSAJES</div>
+                            <div class="flexcontainer text">
+                                <div class="flexitem">
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>Finalmente, todo está resuelto. O, casi todo. El embajador regresó a su misión, pero todavía no sabemos nada de la nave misteriosa.</p>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">1402 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>La nave misteriosa está detrás del Enterprise. Debemos escapar al territorio de la Federación antes que nos destruye.</p>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">1258 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>El embajador perdido nos llamó del planeta. Dijo que su nave también fue atacado por los mismos extraterrestres que atacaron a nosotros.</p>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">1114 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>Estaba hablando con Spock en la calle, cuando una joven teniente se chocó con mí. ¡Pienso que estoy enamorado!</p>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">1042 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>Finalmente estamos viajando otravéz. Vamos a un planeta en sectór 31, la última locación del embajador. Es un buen sitio para buscar a él.</p>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">0900 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>¡Oye chicas! Me llamo Kirk. Quiero alguien especial para que no sea tan aburrido. Me alegraría mucho si vean mi perfil.</p>
+                                            <iframe width="480" height="320" src="https://www.youtube.com/embed/uBGfn_ZWTUo?autoplay=0" frameborder="0" allowfullscreen></iframe>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">0822 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>Scotty está trabajando en los motores. Estoy aburrido. ¿Que debe hacer un capitán con su tiempo libre?</p>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">0746 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>Encontramos una nave que atacó a nosotros. Sobrevivimos pero tenemos problemas con los motores.</p>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">0712 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>¡No aguanto a Starfleet! Otra vez nos exijan que vayamos a una planeta para buscar un embajador. Siempre resuelvo sus problemas para ellos.</p>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">0630 horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="flexrow">
+                                        <div class="flexitem" style="width: 100%; border-bottom: 1px solid #6688CC; border-top: 1px solid #6688CC">
+                                            <p>Un nuevo día. Hoy hay que escanear este sistema solar.</p>
+                                            <p style="font-size: 0.8em; color: #ffffff; line-height: 0.8em">0600 horas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+					</div>
+					
+					<!-- right section base -->
+					<div class="flexitem" style="clear:both;">
+						<div class="flexrow flexend" style="padding-right:1px;">
+							<div class="flexitem elbow bottomLeft colgrp5_7" id="bottleft_elbow" style="float:left;width: 30px; height: 47px;border-bottom-left-radius: 30px;margin-left:5px;">
+								<div class="innerCurve" style="top:2px;left:10px;width:14px; height:14px;"></div>
+								<div style="position:absolute;background-color:black;top:-1px;left:16px;width:24px; height:16px;"></div>
+								<div class="colgrp5_7" style="position:absolute;bottom:0px;right:-1px;width:2px; height:32px;"></div>
+								<div class="colgrp5_7" style="position:absolute;top:-1px;left:0px;width:16px; height:2px;"></div>
+							</div>		
+							<span class="flexitem flexgrow colgrp5_7" id="bottleft_elbowbar" style="float:left;width:37px; height: 32px; margin-right:5px;"></span>
+							<span data-label="25-998325" id="bottleft_button1" data-sound="0" class="flexitem button colgrp5_2 activebutton" style="float:left; width:100px; height: 32px; margin-right: 5px;"></span>
+							<span data-label="ADAM FURMAN" onclick="window.open('http://furmada.github.io/Homepage/')" id="bottleft_button2" data-sound="0" class="flexitem button colgrp5_4 activebutton" style="float:left; width:100px; height: 32px;"></span>
+							<span class="flexitem capR colgrp5_3" id="bottleft_endcap" style="float:left;width:32px; height: 32px;margin-left:5px;"></span>
+
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+</body>
+</html>
