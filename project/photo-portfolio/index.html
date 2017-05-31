@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adam Furman Photography</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<script type="text/javascript">
+	function showLargePicture(el){
+		document.getElementById("big_image").setAttribute("style", el.getAttribute("style"));
+		document.getElementById("big_image").classList.remove("hidden");
+	}
+	function closeLarge(){
+		document.getElementById("big_image").classList.add("hidden");
+	}
+</script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">ADAM FURMAN</h4>
+  </a>
+    <nav>
+      <ul>
+        <li><a href="#hero">PHOTOGRAPHS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+   <div class="hero_text_bg">
+    <h2 class="hero_header">ADAM FURMAN <span class="light">PHOTOGRAPHY PORTFOLIO</span></h2>
+    <p class="tagline">STADIUM HIGH SCHOOL 2017</p>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+	<h2 class="hidden">About</h2>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_01.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_02.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_03.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_04.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_05.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_06.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_07.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_08.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_09.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_10.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_11.jpg')"></div>
+    <div class="image_column" onClick="showLargePicture(this)" style="background-image: url('images/14_FurmanAdam_12.jpg')"></div>
+ 
+    <p class="text_column">For me, photography started out as a hobby. One of my earliest memories is of standing
+in the Wright Park greenhouse holding our family's giant Nikon film camera, peering through
+the magical window at the flowers while my dad guided my finger to the shutter. Since then, on
+family trips, I would always eagerly reach for the camera, liking nothing better than to turn
+slowly in a circle at some Greek monument while snapping blurry photos of my finger.
+My first official photography class was in my sophomore year of high school. In all
+honesty, I chose the class because I am not good at much else in the way of art - science, math,
+and technology are more of my strong suit. But as I learned to apply some rigor to my preexisting
+skills as a photographer, I decided that I liked the subject enough to continue pursuing
+it further.</p>
+    <p class="text_column">Since I first saw his work, Ansel Adams has been my favorite photographer. Something
+about his majestic black-and-white prints appeals to my sense of wonder and speaks volumes
+about the power of nature. My appreciation for him only grew as I tried my hand at making my
+own prints in the darkroom, and I have tried to apply his theories of color balance to my own
+creations.
+This year especially, I have attempted to become more focused in my process. I have
+taught myself to pay attention to framing and composition, which allowed me to take more
+deliberate photos. Though many of my "best" works are still unplanned, I have begun to
+instinctively move to capture moments in a more professional way.
+Though I do not believe I will become an artist or a photographer in my career, I firmly
+believe in being a well-rounded person. After all, what is rationality without love, and emotion
+without logic? I hope that photography can be something I take with me through the paths of
+life, one of many lenses through which I will see the world.</p>
+  </section>
+  
+  <div id="big_image" class="hidden" style="">
+  	<button class="button" onclick="closeLarge()">Close</button>
+  </div>
+  
+  <!-- Parallax Section -->
+  <section class="banner" id="contact">
+    <h2 class="parallax">CONTACT</h2>
+    <p class="parallax_description">Get in touch with me on social media.</p>
+    <!-- Stats Gallery Section -->
+  	<div class="gallery">
+	<div class="thumbnail">
+	  <h4>TWITTER</h4>
+	  <p>@furmada</p>
+	</div>
+	<div class="thumbnail">
+	  <h4>INSTAGRAM</h4>
+	  <p>@furmada</p>
+	</div>
+	<div class="thumbnail">
+	  <h4>SNAPCHAT</h4>
+	  <p>furmanadam</p>
+	</div>
+	<div class="thumbnail">
+	  <h4>EMAIL</h4>
+	  <p>furmada@gmail.com</p>
+	</div>
+    </div>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2017 - <strong>Adam Furman</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
